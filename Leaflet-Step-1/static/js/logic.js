@@ -20,14 +20,14 @@ function createFeatures(earthquakeData) {
   };
 
   function getColor(d) {
-    return d > 90   ? '#ff0000' :
-           d > 70   ? '#ff4000' :
-           d > 50   ? '#ff8000' :
-           d > 30   ? '#ffbf00' :
-           d > 10   ? '#ffff00' :
-           d > 1    ? '#bfff00' :
-                      '#80ff00';
-};
+    return d >= 90   ? '#ff4000' :
+           d >= 70   ? '#ff8000' :
+           d >= 50   ? '#ffbf00' :
+           d >= 30   ? '#ffff00' :
+           d >= 10   ? '#bfff00' :
+           d >= 0    ? '#80ff00' :
+                      '#00ff00';
+  };
   // Create a GeoJSON layer containing the features array on the earthquakeData object
   // Run the onEachFeature function once for each piece of data in the array
   // var earthquakes = L.geoJSON(earthquakeData, {
@@ -92,13 +92,13 @@ function createMap(mags) {
 //    };
 
 function getColor(d) {
-  return d > 90   ? '#ff0000' :
-         d > 70   ? '#ff4000' :
-         d > 50   ? '#ff8000' :
-         d > 30   ? '#ffbf00' :
-         d > 10   ? '#ffff00' :
-         d > 0    ? '#bfff00' :
-                    '#80ff00';
+  return d >= 90   ? '#ff4000' :
+         d >= 70   ? '#ff8000' :
+         d >= 50   ? '#ffbf00' :
+         d >= 30   ? '#ffff00' :
+         d >= 10   ? '#bfff00' :
+         d >= 0    ? '#80ff00' :
+                    '#00ff00';
 };
 
   // Create a layer control
