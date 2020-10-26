@@ -2,6 +2,14 @@
 
 ## Please note:
 
+#### Run Instructions:
+
+1) Clone the repository to your local system.
+2) Place a config.js file that contains the line: const API_KEY =  "A valid api access token from mapbox.com"
+3) Open index.html in Live Server to see the results of earthquake activity for the past week.
+
+
+
 #### 1. Map:  All step 1 map requirements have been met including:
 
 * The Tile layer (light-V10) loads without error.
